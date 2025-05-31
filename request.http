@@ -1,0 +1,32 @@
+### Get all users
+GET http://localhost:3000/api/users
+Accept: application/json
+X-Api-Key: test
+
+### Create a new user
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+X-Api-Key: test
+
+{
+    "name": "Mohamed Bakour",
+    "email": "mo.bakour@outlook.com"
+}
+
+### Update a user
+PUT http://localhost:3000/api/users/<id>
+Content-Type: application/json
+Accept: application/json
+X-Api-Key: test
+
+{
+    "name": "Mohamed Bakour Updated",
+    "email": "mo.bakour.updated@outlook.com"
+}
+
+### Delete a user
+DELETE http://localhost:3000/api/users/<id>
+Accept: application/json
+X-Api-Key: test
+
